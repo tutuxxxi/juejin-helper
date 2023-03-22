@@ -18,14 +18,14 @@ env:
   PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
   WEIXIN_WEBHOOK: ${{ secrets.WEIXIN_WEBHOOK }}
 
-jobs:
-  SeaGold:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - name: Run Project
-        run: |
-          cd workflows
-          yarn
-          yarn seagold
+#jobs:
+#  SeaGold:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v2
+#      - name: Run Project
+#        run: |
+#          cd workflows
+#          yarn
+#          yarn seagold
